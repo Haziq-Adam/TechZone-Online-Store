@@ -4,7 +4,8 @@ An online store website I worked on for my Information Technology practical assi
 
 I built this project with PHP and MySQL. Visitors can browse products, view product details and add items to a shopping cart. There are also pages for user accounts, sellers and administrators.
 
-**Hosted website:** The TechZone link will be added once the deployment has been checked. The hosted website uses a separate database from the sample database shared here.
+Hosted website: techzone-atx.infinityfreeapp.com
+The hosted website uses a separate database from the sample database shared in this repository.
 
 ![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?style=flat-square)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square)
