@@ -1,0 +1,15 @@
+# All image filenames referred to by the original A14 product catalog. No user records.
+uploads/products/airpods_pro_3_promo_1777349079286.png
+uploads/products/asus_rog_g16_promo_1777348726620.png
+uploads/products/bose_qc_ultra_promo_1777349168662.png
+uploads/products/dell_xps_15_promo_1777348926461.png
+uploads/products/dji_osmo_pocket_3_promo_1777349283849.png
+uploads/products/iphone_15_pro_max_promo_1777348499319.png
+uploads/products/macbook_pro_m3_promo_1777348673703.png
+uploads/products/oneplus_12_promo_1777348597231.png
+uploads/products/ps5_slim_promo_1777349301049.png
+uploads/products/razer_deathadder_promo_1777350003321.png
+uploads/products/samsung_s24_ultra_promo_1777348573332.png
+uploads/products/sony_a7rv_promo_1777349220099.png
+uploads/products/sony_wh1000xm5_promo_1777348944531.png
+uploads/products/xbox_series_x_promo_1777349353497.png
