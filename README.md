@@ -20,6 +20,7 @@ It's a PHP and MySQL online store project. I built pages for browsing products, 
 - [What the system does](#what-the-system-does)
 - [Tools I used](#tools-i-used)
 - [Run it on your computer](#run-it-on-your-computer)
+- [Database configuration](#database-configuration)
 - [What I learned](#what-i-learned)
 - [Project files](#project-files)
 - [Project disclaimer](#project-disclaimer)
@@ -46,12 +47,34 @@ VS Code, XAMPP and phpMyAdmin for local development and testing. The project als
 3. Open phpMyAdmin and create a new empty database named `techzone_demo`.
 4. Import [`database/schema.sql`](database/schema.sql) into that database. The tables are ordered so their foreign key references exist before they are used.
 5. To load a few made-up products, optionally import [`database/demo_catalog.sql`](database/demo_catalog.sql) **after** the schema.
-6. Copy `config.local.example.php` to `config.local.php` and enter your own database settings.
+6. Copy `config.local.example.php` to `config.local.php`. Change the database settings, including **your own MySQL password**. See [Database configuration](#database-configuration).
 7. Open `http://localhost/TechZone-Online-Store/` in your browser.
 
 The shared SQL files do not contain real users, passwords, shopping carts or seller contact information. No administrator account is created automatically. You can register your own test account to try the basic pages.
 
 For more information, see the [installation guide](docs/INSTALLATION.md) and [database notes](docs/DATABASE.md).
+
+## Database configuration
+
+The database settings are different for each computer and hosting account. **You must edit `config.local.php` yourself before running the site.** The file `config.local.example.php` is only an example.
+
+For **XAMPP on your own computer**, use the hostname, username, password and database name from your local MySQL setup. A default XAMPP installation often uses `localhost`, `root` and a blank password, but check your own settings.
+
+For **InfinityFree or another PHP host**, copy the file to `config.local.php` and replace **all four placeholders** below with the values shown in *your own hosting account's MySQL Databases page*:
+
+```php
+<?php
+return [
+    'host' => 'YOUR_MYSQL_HOSTNAME',
+    'username' => 'YOUR_MYSQL_USERNAME',
+    'password' => 'YOUR_MYSQL_PASSWORD',
+    'database' => 'YOUR_FULL_DATABASE_NAME',
+];
+```
+
+In particular, **`YOUR_MYSQL_PASSWORD` is not a working password**. Replace it with the **MySQL password for your own hosting account**. Do not reuse someone else's password or database settings. Make sure the full database name includes any prefix assigned by your host.
+
+**Keep `config.local.php` private.** It is excluded by `.gitignore`, so do not force-add it to GitHub or paste your password into the README, screenshots or issues. Upload the configured file only to the appropriate server and make sure visitors cannot download it. See [deployment notes](docs/DEPLOYMENT.md).
 
 ## What I learned
 
